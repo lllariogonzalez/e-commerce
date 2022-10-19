@@ -2,9 +2,7 @@ import axios from "axios";
 
 const checkPermissions = async (getToken, history)=>{
     try {
-        const token = await getToken({
-            audience: process.env.REACT_APP_AUTH0_AUDIENCE
-          });
+        const token = await getToken();
         const response = await axios("/authorization",{
             headers: {
                 Authorization: `Bearer ${token}`
