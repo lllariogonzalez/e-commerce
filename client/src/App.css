@@ -1,0 +1,30 @@
+
+:root {
+--bg-color-red : #a52323 !important;
+
+
+}
+@import url('http://fonts.cdnfonts.com/css/nunito-sans');
+
+*{
+    font-family: 'Nunito Sans';
+}
+
+
+.bg-danger{
+    background-color: var(--bg-color-red) !important;
+}
+.btn-danger{
+    background-color: #a52323;
+    border: #a52323 solid 1px;
+}
+
+.btn-primary{
+    background-color: #a52323!important;
+    border: #a52323 solid 1px;
+}
+
+
+.text-danger{
+    color: #a52323 !important;
+}
