@@ -1,17 +1,23 @@
 const { Router } = require('express');
-const { getUsers, getUserId, postUser, deleteUser, updateUser } = require('../controllers/usersController.js');
+const { postUser, getUserCheck, blockUser, updateUser, getUserByEmail, getUsers } = require('../controllers/usersController.js');
+const login = require('../middlewares/login.js');
+const admin = require('../middlewares/admin.js');
+const fileUpload = require('../middlewares/fileUpload.js');
 
 const userRouter = Router();
 
-userRouter.get('/', getUsers);
-
-userRouter.get('/:id', getUserId);
-
 userRouter.post('/', postUser);
 
-userRouter.delete("/:id", deleteUser);
+userRouter.get('/', login, admin, getUsers);
 
-userRouter.put("/:id", updateUser);
+userRouter.get('/:email', login, getUserByEmail);
 
+userRouter.get('/check/:email', getUserCheck);
+
+userRouter.put('/block/:email', login, admin, blockUser);
+
+userRouter.post('/:email', login, fileUpload, updateUser);
+
+userRouter.put('/:email', login, fileUpload, updateUser);
 
 module.exports = userRouter;

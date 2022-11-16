@@ -5,6 +5,6 @@ export const LoginButton = () => {
     const { loginWithRedirect } = useAuth0();
 
     return(
-        <button className="btn btn-primary  col-2 m-0 border-0 d-block fw-semibold" style={{backgroundColor: "#a52323"}} onClick={()=> loginWithRedirect() }> <i className="fa-solid fa-user"></i> Login</button>
+        <button className="btn btn-sm  btn-dark py-0 " onClick={()=> loginWithRedirect() }> <i className="fa-solid fa-right-to-bracket"></i> Login</button>
     )
 }

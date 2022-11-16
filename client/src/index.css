@@ -1,6 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nunito Sans', nunito-sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +12,140 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.img-delete{
+  position: relative;
+  transition: 0.5s;
+}
+
+.img-delete:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.img-delete::before {
+  content: "X";
+  color: #8f1414;
+  position: absolute;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-delete:hover::before{
+  opacity: 1;
+}
+
+.loader svg polygon {
+  stroke-dasharray: 50;
+  animation: middle-animation 1.5s linear infinite;
+}
+
+@keyframes middle-animation {
+  to{
+    stroke-dashoffset: 100;
+  }
+}
+
+.social-bar {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  z-index: 100;
+  transition: all .5s;
+}
+
+.iconSocial {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+}
+
+.iconSocial-whatsapp {
+  background: #25d366;
+}
+
+.iconSocial-instagram {
+  background: #e82868 ;
+}
+
+.iconSocial:first-child{
+  border-radius: 1rem 0 0 0;
+}
+
+.iconSocial:last-child{
+  border-radius: 0 0 0 1rem;
+}
+
+.iconSocial:hover {
+  padding-right: 2.5rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .42);
+  color: white;
+}
+
+.glitch-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  width: fit-content;
+  text-shadow: 
+    0.05em 0 0 rgba(255, 0, 0, .75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, .75),
+    0.025em 0.05em 0 rgba(0, 0, 255, .75);
+  animation: glitch 0.75s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
 }

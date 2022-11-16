@@ -34,10 +34,6 @@ module.exports = (sequelize) => {
           min: 0.01,
         },
       },
-      category: {
-        type: DataTypes.ENUM("laptops", "smartphones", "tablets", "smartwatches", "speakers", "tv"),
-        allowNull: false,
-      },
       stock: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -45,6 +41,11 @@ module.exports = (sequelize) => {
       brand: {
         type: DataTypes.STRING,
         allowNull: false,
+      },
+      rating: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+        defaultValue: 0,
       },
     },
     {

@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+.wwebjs_auth
+/whatsapp/chats
+
 
 # testing
 /coverage

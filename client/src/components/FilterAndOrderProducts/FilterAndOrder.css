@@ -1,0 +1,52 @@
+/* 
+.accordion-button{
+    background-color:none !important;
+    color :#3d3d3d !important;
+}
+.accordion-button:focus {
+    border: 1px solid #7e7e7e !important;
+    color: #f5f5f5 !important;
+    box-shadow: none !important;
+    background-color: #7e7e7e !important;
+    
+}
+.accordion-button:focus-visible  {
+    border: 1px solid #d25c5c !important;
+    color: #f5f5f5 !important;
+
+} */
+
+.accordion-item{    
+    
+}
+
+.accordion-button{
+    background-color: #fff !important;
+    color: #000000 !important;
+}
+.accordion-button:focus{
+    border: none !important;
+    background-color: #292b2c !important;
+    color: #fff !important;
+    box-shadow:0 0 0 0.25rem rgba(253, 13, 13, 0.25) !important;
+}
+
+.accordion-button:active{
+    border: none !important;
+    background-color: #574545 !important;
+}
+
+
+input:checked {
+    background-color: #a52323 !important;
+    color: #a52323 !important;
+    border: 1px solid  #a52323 !important;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25) !important;
+    border: 1px solid #b6b6b6 !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image:url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e") !important; 
+}

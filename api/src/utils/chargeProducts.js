@@ -1,14 +1,26 @@
 const data = require('./../../productsInfo.json');
-const { Product } = require('../db.js');
+const { Product, Category } = require('../db.js');
 
 
-const chargeProducts = () =>{
-//const products = JSON.parse(data);
+const chargeProducts = async() =>{
     try {
-        let dataBD = data.map((e) => Product.create(e));
-        PromiseAll(dataBD).then(()=> console.log('Products successfully charged'));
+        const categories = [{ category: "Laptops"}, { category: "Smartphones"},{ category:"Tablets"},{ category:"Smartwatches"}, { category: "Speakers"}, { category:"TV"}];
+        const CategoryDB = categories.map(c=> Category.create(c));
+        await Promise.all(CategoryDB).then(()=>console.log('Categories successfully charged'));
+        const ProductDB= data.map((e) => Product.create({
+            name: e.name,
+            image: e.image,
+            description: e.description,
+            price: e.price,
+            CategoryId: e.CategoryId,
+            rating: e.rating,
+            stock: e.stock,
+            brand: e.brand,
+        }));
+        await Promise.all(ProductDB).then(()=>console.log('Product successfully charged'));
+        
     } catch (error) {
-        return error.message;
+        console.log(error.message);
     }
 }
 
