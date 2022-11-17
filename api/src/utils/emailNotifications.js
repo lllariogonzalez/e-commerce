@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 require("dotenv").config();
-const { USER_MAIL_A, CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, REFRESH_TOKEN } = process.env;
+const { USER_MAIL, CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, REFRESH_TOKEN } = process.env;
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN});
@@ -14,7 +14,7 @@ const emailNotifications = async (email, subject, message) =>{
         service: "gmail",
         auth: {
           type: "OAuth2",
-          user: USER_MAIL_A,
+          user: USER_MAIL,
           clientId: CLIENT_ID,
           clientSecret: CLIENT_SECRET,
           refreshToken: REFRESH_TOKEN,
