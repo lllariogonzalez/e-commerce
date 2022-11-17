@@ -33,7 +33,7 @@
     "pg": "^8.5.1",
     "qrcode-terminal": "^0.12.0",
     "sequelize": "^6.3.5",
-    "whatsapp-web.js": "^1.18.2"
+    "whatsapp-web.js": "^1.18.3"
   },
   "devDependencies": {
     "jest": "^29.0.3",

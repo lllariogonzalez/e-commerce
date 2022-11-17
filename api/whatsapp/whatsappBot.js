@@ -5,7 +5,21 @@ const exceljs = require('exceljs');
 const moment = require('moment');
 
 const client = new Client({
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth({
+        puppeteer: {
+            headless: true,
+            args: [
+            '--no-sanbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--single-process',
+            '--disable-gpu',
+            ],
+        },
+    })
 });
 
 client.on('qr', (qr) => {
