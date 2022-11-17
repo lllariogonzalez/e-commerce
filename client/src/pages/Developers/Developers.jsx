@@ -1,6 +1,7 @@
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 import { Card } from "react-bootstrap";
+import Mario from "./Imagenes/Mario.png";
 import Ana from "./Imagenes/Ana.jpeg";
 import Nahuel from "./Imagenes/Nahuel.jpeg";
 import Damian from "./Imagenes/Damian.jpeg";
@@ -19,6 +20,7 @@ export default function Developers() {
     }, []);
 
     let info = [
+        { name: "Mario Gonzalez", email: "mailto:lllariogonzalez@gmail.com", gitHub: "https://github.com/lllariogonzalez", linkedIn: "https://www.linkedin.com/in/lllariogonzalez/", img: Mario },
         { name: "Ana Belén Gonzalvez", email: "mailto:anaa.gonzalvez2@gmail.com", gitHub: "https://github.com/AnaGonzalvez", linkedIn: "https://linkedin.com/in/anabeléngonzalvez", img: Ana },
         { name: "Damian Gonzalez", email: "mailto:damiangonzalez@gmail.com", gitHub: "https://github.com/nangonz", linkedIn: "https://www.linkedin.com/in/dami-gonzalez/", img: Damian },
         { name: "Anderson Marin", email: "mailto:andersonmarindev@gmail.com", gitHub: "https://github.com/anmarinur", linkedIn: "https://www.linkedin.com/in/andersonmarindev/", img: Anderson },
