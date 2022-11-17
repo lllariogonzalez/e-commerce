@@ -13,6 +13,6 @@ app.listen(process.env.PORT, () => {
 console.log(`Server listening at port ${process.env.PORT}`); // eslint-disable-line no-console
 //para desactivar el bot solo comentar la siguiente linea
 
-client.initialize();
+//client.initialize();
 
 });
