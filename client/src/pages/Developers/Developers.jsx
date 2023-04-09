@@ -57,7 +57,7 @@ export default function Developers() {
                                                     marginLeft: "2em",
 
                                                 }}
-                                                src={e.img}
+                                                src="https://st4.depositphotos.com/1000193/30113/v/600/depositphotos_301135256-stock-illustration-flat-modern-minimal-hacker-or.jpg"
                                             />
                                         </div>
                                         <div class=" col-12 text-center col-md-8 p-5"   >
