@@ -2,7 +2,7 @@
 
 # Tecnoshop E-commerce 🔻
 
-Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en línea a través de MercadoPago, cuenta con autenticación y autorización de usuarios, un control administrativo para el negocio tanto logistico como de marketing, cuenta también con datos estadísticos para la toma de decisiones y un completo control desde la publicación hasta la venta; cuenta además con un bot de Whatsapp y notificaciones vía mail entre muchas funcionalidades ...
+Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en línea a través de MercadoPago, cuenta con autenticación y autorización de usuarios, un control administrativo para el negocio tanto logistico como de marketing, cuenta también con datos estadísticos para la toma de decisiones y un completo control desde la publicación hasta la venta; integra además un bot de Whatsapp y notificaciones vía mail entre muchas otras funcionalidades ...
 
 ## Video e imágenes 🎞
 
@@ -12,18 +12,18 @@ Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en lí
 
 ## Tecnologías usadas
 
-| Seccion | Tecnologías |
-| ----------- | ----------- |
-| **Frontend** |  HTML, CSS, JavaScript, Bootstrapp, React y Redux |
-| **Backend** |   Node y Express  |
-| **Base de datos** |     PostgreSQL y Sequelize   |
-| **Autenticación y autorización** |  Auth0, middlewares   |
-| **Pasarela de pagos** |     Mercado Pagos    |
-| **Almacenamiento de imágenes** |    Cloudinary   |
-| **Notificaciones** |    Nodemailer, EmailJS  |
-| **Graficos** |  ChartJS  |
-| **Whatsapp Bot** |  whatsapp-web.js  |
-| **Animaciones** |   CSS y Framer-Motion  |
+| Seccion                          | Tecnologías                                       |
+| -------------------------------- | ------------------------------------------------- |
+| **Frontend**                     |  HTML, CSS, JavaScript, Bootstrapp, React y Redux |
+| **Backend**                      |  Node y Express                                   |
+| **Base de datos**                |  PostgreSQL y Sequelize                           |
+| **Autenticación y autorización** |  Auth0, middlewares                               |
+| **Pasarela de pagos**            |  Mercado Pagos                                    |
+| **Almacenamiento de imágenes**   |  Cloudinary                                       |
+| **Notificaciones**               |  Nodemailer, EmailJS                              |
+| **Graficos**                     |  ChartJS                                          |
+| **Whatsapp Bot**                 |  whatsapp-web.js                                  |
+| **Animaciones**                  |  CSS y Framer-Motion                              |
 
 ## Equipo de trabajo bajo metodologías ágiles (***SCRUM***) 💻
 
