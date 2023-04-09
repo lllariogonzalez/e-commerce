@@ -6,7 +6,7 @@ Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en lí
 
 ## Video e imágenes 🎞
 
-[![Watch the video](https://media.licdn.com/dms/image/C4D2DAQFKbOXmvQzg6g/profile-treasury-image-shrink_800_800/0/1668657343730?e=1673287200&v=beta&t=VJ2hyZGmJG285LcNZ-hg9kikZq3bOoHxwdpjUnXCVHw)](https://youtu.be/gGcDLVBeC0U)
+[![Watch the video](https://img.youtube.com/vi/gGcDLVBeC0U/0.jpg)](https://www.youtube.com/watch?v=gGcDLVBeC0U)
 
 ![Vista principal dashboard-administrador](https://media.licdn.com/dms/image/C4D2DAQG2F0x5py585g/profile-treasury-image-shrink_800_800/0/1668657576982?e=1673287200&v=beta&t=0GdtvOuUVvxLd2vXkafXaQVJ2tiE7T-F76nk7gOW11E)
 
