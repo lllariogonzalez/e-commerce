@@ -1,7 +1,6 @@
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 import { Card } from "react-bootstrap";
-import Mario from "./Imagenes/Mario.png";
 import Ana from "./Imagenes/Ana.jpeg";
 import Nahuel from "./Imagenes/Nahuel.jpeg";
 import Damian from "./Imagenes/Damian.jpeg";
