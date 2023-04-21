@@ -6,7 +6,7 @@ Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en lí
 
 ## Video presentación 🎞
 
-[![Watch the video](https://img.youtube.com/vi/gGcDLVBeC0U/0.jpg)](https://www.youtube.com/watch?v=gGcDLVBeC0U)
+[![Watch the video](https://img.youtube.com/vi/gGcDLVBeC0U/0.jpg)](https://youtu.be/UWWrFgAO3vo)
 
 ## Tecnologías usadas
 
