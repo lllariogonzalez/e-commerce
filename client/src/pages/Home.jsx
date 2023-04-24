@@ -38,18 +38,20 @@ export default function Home() {
   // ---------------------------
 
 
-  useEffect(() => {    
+  useEffect(() => {
     getLastestProducts();
     getBestRatingProducts();
     getOfferProduct();
-    updateStatus();    
+    updateStatus();
   }, [])
 
   const updateStatus = async () => {
     const token = await getAccessTokenSilently();
-    if (id && status) await axios.put(`order/status/${id}`, {status: status}, {headers: {
-      Authorization: `Bearer ${token}`
-  }});
+    if (id && status) await axios.put(`order/status/${id}`, { status: status }, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
     id = '';
     status = '';
   }
@@ -74,13 +76,13 @@ export default function Home() {
   const getOfferProduct = async () => {
     try {
       const result = await axios.get('/offer');
-      if(result.data.length === 0) return setOfferProducts(undefined);
-      var offerlast = result.data[result.data.length-1]?.id || "";
+      if (result.data.length === 0) return setOfferProducts(undefined);
+      var offerlast = result.data[result.data.length - 1]?.id || "";
       const resultTwo = await axios.get(`/product?disc=${offerlast}&size=6`);
-      if ( resultTwo.data.products.length < 6) {
-        const result3 = await axios.get(`/product?disc=${offerlast - 1}&size=${6 - (resultTwo.data.products.length) }`);
+      if (resultTwo.data.products.length < 6) {
+        const result3 = await axios.get(`/product?disc=${offerlast - 1}&size=${6 - (resultTwo.data.products.length)}`);
         setOfferProducts(resultTwo.data.products.concat(result3.data.products));
-      }else{
+      } else {
         setOfferProducts(resultTwo.data.products);
       }
     } catch (error) {
@@ -129,10 +131,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    
-  }, []);
-
-  useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
@@ -140,7 +138,7 @@ export default function Home() {
     <>
       <Nav />
       <Transition>
-        <CardProductsList goUp={()=>window.scroll(0, 0)} />
+        <CardProductsList goUp={() => window.scroll(0, 0)} />
       </Transition>
       <Footer />
       <GoUpButton />
@@ -160,43 +158,43 @@ export default function Home() {
           <div className="row  py-4 m-0 bg-light "  >
             <div className="col-12 text-center text-dark ">
               <h3 className="text-uppercase fw-bold mt-4" >Product News</h3>
-              {lastestProducts == null ? <div className="d-flex justify-content-center"><Loading height={"250px"}/></div> : 
-              <Carousel
-                swipeable={false}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                infinite={true}
-                itemClass="px-2"
-                customTransition="all .5s"
-                transitionDuration={1000}
-                containerClass="carousel-container m-5">
-                {
-                  lastestProducts ? lastestProducts.map(p =>
-                    <CardProduct product={p} key={p.id} />
-                  ) : (<div className="d-flex justify-content-center"><Loading height={"250px"}/></div>)
-                }
-              </Carousel> }
+              {lastestProducts == null ? <div className="d-flex justify-content-center"><Loading height={"250px"} /></div> :
+                <Carousel
+                  swipeable={false}
+                  draggable={false}
+                  showDots={true}
+                  responsive={responsive}
+                  autoPlay={true}
+                  autoPlaySpeed={3000}
+                  infinite={true}
+                  itemClass="px-2"
+                  customTransition="all .5s"
+                  transitionDuration={1000}
+                  containerClass="carousel-container m-5">
+                  {
+                    lastestProducts ? lastestProducts.map(p =>
+                      <CardProduct product={p} key={p.id} />
+                    ) : (<div className="d-flex justify-content-center"><Loading height={"250px"} /></div>)
+                  }
+                </Carousel>}
             </div>
             <div className="col-12 text-center text-dark bg-white">
               <h3 className="text-uppercase fw-bold my-4">Product Offer</h3>
               <div className="row g-4 px-5">
-                { offerProducts && offerProducts.find(p=>p.Offer?.active==="true") ? 
-                
-                  offerProducts.map(p =>{
-                    if(p.Offer?.active === "true"){
+                {offerProducts && offerProducts.find(p => p.Offer?.active === "true") ?
+
+                  offerProducts.map(p => {
+                    if (p.Offer?.active === "true") {
                       return <CardOfferProduct p={p} key={p.id} />
                     }
                     return;
                   }
                   ) : offerProducts === undefined
-                  ? <div className='d-flex flex-column align-items-center mt-4'>
-                  
-                  <p className='text-danger fw-bold fs-4 mt-2'>No offers available</p>
-              </div>
-                  : (<div className="d-flex justify-content-center"><Loading height={"250px"} text={"true"}/></div>)
+                    ? <div className='d-flex flex-column align-items-center mt-4'>
+
+                      <p className='text-danger fw-bold fs-4 mt-2'>No offers available</p>
+                    </div>
+                    : (<div className="d-flex justify-content-center"><Loading height={"250px"} text={"true"} /></div>)
                 }
               </div>
 
@@ -204,8 +202,8 @@ export default function Home() {
 
             <div className="col-12 mt-2 text-center">
               <h3 className="text-uppercase fw-bold my-4" >best ranking</h3>
-                {bestRatingProducts?.length === 0 && <div className='d-flex flex-column align-items-center mt-4'>
-                  <p className='text-danger fw-bold fs-4 mt-2'>No best rating products</p>
+              {bestRatingProducts?.length === 0 && <div className='d-flex flex-column align-items-center mt-4'>
+                <p className='text-danger fw-bold fs-4 mt-2'>No best rating products</p>
               </div>}
               <Carousel
                 swipeable={false}
@@ -221,7 +219,7 @@ export default function Home() {
                 {
                   bestRatingProducts ? bestRatingProducts.map(p =>
                     <CardBestRaitingProduct p={p} key={p.id} />
-                  ) :  (<div className="d-flex justify-content-center"><Loading height={"250px"}/></div>)
+                  ) : (<div className="d-flex justify-content-center"><Loading height={"250px"} /></div>)
                 }
               </Carousel>
             </div>
