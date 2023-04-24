@@ -8,12 +8,12 @@ Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en lí
 
 ## Imagenes y Video link🎞
 
-<img src="./client/public/images/1.webp" width="500" alt="home" />
-<img src="./client/public/images/2.webp" width="500" alt="cart" />
-<img src="./client/public/images/3.webp" width="500" alt="profile" />
-<img src="./client/public/images/4.webp" width="500" alt="payment" />
-<img src="./client/public/images/5.webp" width="500" alt="dashboard" />
-<img src="./client/public/images/6.webp" width="500" alt="graphics" />
+<img src="./client/public/images/1.webp" width="300" alt="home" />
+<img src="./client/public/images/2.webp" width="300" alt="cart" />
+<img src="./client/public/images/3.webp" width="300" alt="profile" />
+<img src="./client/public/images/4.webp" width="300" alt="payment" />
+<img src="./client/public/images/5.webp" width="300" alt="dashboard" />
+<img src="./client/public/images/6.webp" width="300" alt="graphics" />
 
 [![Watch the video](./client/public/YouTube.png)](https://youtu.be/UWWrFgAO3vo)
 
