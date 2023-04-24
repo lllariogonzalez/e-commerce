@@ -6,9 +6,18 @@
 
 Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en línea a través de MercadoPago, cuenta con autenticación y autorización de usuarios, un control administrativo para el negocio tanto logistico como de marketing, cuenta también con datos estadísticos para la toma de decisiones y un completo control desde la publicación hasta la venta; integra además un bot de Whatsapp y notificaciones vía mail entre muchas otras funcionalidades ...
 
-## Video presentación 🎞
+## Imagenes y Video link🎞
 
-[![Watch the video](https://img.youtube.com/vi/gGcDLVBeC0U/0.jpg)](https://youtu.be/UWWrFgAO3vo)
+<img src="./client/public/images/1.webp" width="500" alt="home" />
+<img src="./client/public/images/2.webp" width="500" alt="cart" />
+<img src="./client/public/images/3.webp" width="500" alt="profile" />
+<img src="./client/public/images/4.webp" width="500" alt="payment" />
+<img src="./client/public/images/5.webp" width="500" alt="dashboard" />
+<img src="./client/public/images/6.webp" width="500" alt="graphics" />
+
+[![Watch the video](./client/public/YouTube.png)](https://youtu.be/UWWrFgAO3vo)
+
+
 
 ## Tecnologías usadas
 
