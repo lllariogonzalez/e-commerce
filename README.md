@@ -6,6 +6,12 @@
 
 Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en línea a través de MercadoPago, cuenta con autenticación y autorización de usuarios, un control administrativo para el negocio tanto logistico como de marketing, cuenta también con datos estadísticos para la toma de decisiones y un completo control desde la publicación hasta la venta; integra además un bot de Whatsapp y notificaciones vía mail entre muchas otras funcionalidades ...
 
+Puedes entrar como administrador para ver y probar mas características de la app con las siguientes credenciales:
+
+> admin@tecnoshop.com 
+
+> Admin001
+
 ## Imagenes y Video link🎞
 
 <img src="./client/public/images/1.webp" width="500" alt="home" />
@@ -44,3 +50,23 @@ Desarrollo de un e-commerce para equipos tecnológicos, que permite pagos en lí
 - ***Enrique López***
 - ***Anderson Marín***
 - ***Mario Gonzalez***
+
+## Proyecto 🚧
+
+Código abierto, puedes clonarlo o descargarlo e instalar las depencias necesarias con npm - yarn - pnpm o el administrador de paquetes que uses, y recuerda configuar las variables de entorno necesarias .example.env
+
+```bash
+npm install
+```
+
+### Frontend React CRA ( ./client )
+
+```bash
+npm start
+```
+
+### Backend Node.js Express + PostgreSQL DB Sequelize ( ./api )
+
+```bash
+npm run dev
+```
