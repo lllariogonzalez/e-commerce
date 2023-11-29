@@ -1,5 +1,5 @@
 ![Website deploy status](https://img.shields.io/website?url=https%3A%2F%2Fe-commerce-tecnoshop.vercel.app)
-![Website deploy status](https://img.shields.io/website?label=server&url=https%3A%2F%2Fe-commerce-technoshop.up.railway.app%2Fproduct)
+![Website deploy status](https://img.shields.io/website.svg?url=https%3A%2F%2Ftecnoshop-e-commerce.onrender.com/product)
 
 
 # Tecnoshop E-commerce 🔻
